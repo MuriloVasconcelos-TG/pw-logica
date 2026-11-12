@@ -1,6 +1,5 @@
-num1 = int(input("Digite um número para somar; "))
-num2 = int(input("Digite um outro número para somar: "))
+x, y, z = "Orange", "Banana", "Cherry"
 
-soma = num1 + num2
-
-print("O resultado da soma é:", soma)
+print(x)
+print(y)
+print(z)
