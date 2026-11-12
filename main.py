@@ -1,9 +1,4 @@
-a = 5 #isso é um número inteiro
-b = 6.2 #isso é um número com .
-nome = "Murilo" #aqui é uma string (texto)
-ligado = True #aqui é um bool
+x = "Airton"
+y = "10"
 
-print(a)
-print(b)
-print(nome)
-print(ligado)
+print(x,)
