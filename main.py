@@ -1,32 +1,15 @@
-print("=== CONVERSOR DE KILOBYTE PRA BYTE ===")
+print ("=== CONVERSOR DE ARMAZENAMENTO ==")
 
-kb = float(input("Digite a quantidade de kilobytes"))
+bytes = float(input("Digite a quantidade de KB: "))
+kb = float(input("Digite a quantidade de KB: "))
+mb = float(input("Digite a quantidade de MB"))
 
-b =  kb / 1.024
+resultado_kb = bytes / 1024
+resultado_mb = kb / 1024
+resultado_gb = mb / 1024
 
-print(f" {kb} kb = {b:.2f} bytes")
+print("\n=== RESULTADOS ===")
 
-
-
-
-
-print("=== CONVERSOR DE MEGABYTE PRA KILOBYTE ===")
-
-kb = float(input("Digite a quantidade de kilobytes"))
-
-b =  kb / 1.024
-
-print(f" {kb} kb = {b:.2f} bytes")
-
-
-
-
-
-
-
-
-
-print("=== CONVERSOR DE KM PRA MILHAS ===")
-kb = float(input("Distância em km: "))
-milhas = km / 1.609
-print(f" {km} km = {milhas:.2f} milhas")
+print(f"{bytes} Bytes = {resultado_kb:.2f} KB")
+print(f"{kb} KB = {resultado_mb:.2f} MB")
+print(f"{mb} MB = {resultado_gb:.2f} GB")
