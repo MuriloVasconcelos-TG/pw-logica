@@ -1,18 +1,27 @@
+num1 = float(input("Digite o primeiro número:"))
+num2 = float(input("Digite o segundo número:"))
 
-print("=== PAR OU ÍMPAR ===")
-nome1 = input("Nome do jogador 1: ")
-nome2 = input("Nome do jogador 2: ")
-escolha = int(input(f"{nome1}, seu número: "))
+operacao == "+"
 
-n1 = int(input(f"{nome1}, seu número: "))
-n2 = int(input(f"{nome2}, seu número: "))
+if operacao == "+":
+    resultado = num1 + num2
+    print(f"resultado: {resultado:.2f}")
 
-soma = n1 + n2
-resultado = "par" if soma % 2 == 0 else "impar"
+if operacao == "-"
+    resultado = mum1 - num2
+    print(f"resultado: {resultado:.2f}")
 
-print(f"\n`{n1} + {n2} = {soma} ({resultado})")
+if operacao == "*"
+    resultado = mum1 * num2
+    print(f"resultado: {resultado:.2f}")
 
-if escolha == resultado:
-    print(f"{nome1} ganhou!")
-else:
-    print(f"{nome2} ganhou!")
+elif operacao == "/"
+    if num2 != 0:  
+        resultado = num1 / num2
+        print(f"Resultado: {resultado:.2f}")
+else
+    print("Erro! Não pode dividir por 0!")
+
+else
+    print("Operação invalida")
+    
