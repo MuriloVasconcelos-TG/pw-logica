@@ -1,12 +1,25 @@
-a = int(input("Digite o lado A: "))
-b = int(input("Digite o lado B: "))
-c = int(input("Digite o lado C: "))
+operacao = input(
+    "Escolha a conversão \n"
+    "1 - Celsius para Fahrenheit\n"
+    "2 - Quilômetros para Milhas\n"
+    "3 - Reais para Dólar\n"
+    "4 - Quilogramas para Libras\n"
+)
 
-if a < b + c and b < a + c and c < a + b
+valor = float(input("Digite o valor que deseja converter: "))
 
-    print("Forma um triangulo!")
+if operacao == "1"
+    resultado = (valor * 9 / 5) + 32
+    print (f"Resultado:{resultado:.1f} °F")
 
-    if a == b and b == c
-        print("Triangulo Equilátero!")
-elif a == b or a == c or b == c
-    print("Triangulo isóceles!")
+if  operacao == "1"  
+    resultado = valor / 1.609
+    print (f"Resultado:{resultado:.1f} milhas")
+
+if  operacao == "1"  
+    resultado = valor / 5.93
+    print (f"Resultado:{resultado:.1f} dólares")
+
+if  operacao == "1"  
+    resultado = valor * 2.205
+    print (f"Resultado:{resultado:.1f} libras")
