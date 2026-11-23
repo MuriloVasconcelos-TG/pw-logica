@@ -1,5 +1,6 @@
-input("Digite um numero")
+numero = int(input("Digite um número: "))
 
-contador = numero for range <= 10
-while contador <= 5:
-    print("número: ")
+for contador in range (1, 11):
+
+resultado - numero * contador
+print(f"{numero} X {contador} = {resultado}")
