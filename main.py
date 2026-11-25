@@ -1,28 +1,18 @@
-import pygame
+import random
 
-pygame.init()
+numero_secreto = random.randint(1, 20)
+tentativas = 0
+palpite = int(input(
+     "Tente adivinhar um numero entre 1 e 20: "))
 
-LARGURA = 600
-ALTURA = 400
-
-tela = pygame.display.set_mode((LARGURA, ALTURA))
-pygame.display.set_caption("Tela Inicial")
-
-fonte = pygame.font.SysFont("Arial", 40, bold=True)
-
-mensagem = fonte.render("Tela em Python", True, (255, 100, 180))
-
-posicao_x = (LARGURA - mensagem.get_width()) // 2
-posicao_y = (ALTURA - mensagem.get_width()) // 2
-
-rodando = True
-
-while rodando:
-
-    for evento in pygame.event.get():
-        if evento.type == pygame.QUIT:
-            rodando = False
-    tela.fill((20, 20, 30))
-    tela.blit(mensagem, (posicao_x, posicao_y))
-    pygame.display.update()
-pygame.quit()
+while palpite != numero_secreto:
+    tentativas += 1
+    if palpite < numero_secreto:
+        print("O número secreto é maior!")
+else:
+        print("O numero secreto é menor!")
+    palpite = int(input("Tente novamente: "))
+tentativas += 1
+print("Parabéns! Você acertou!")
+print(f"O número secreto era: {numero_secreto}")
+print(f"Você utilizou {tentativas} tentativas.")
