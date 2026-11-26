@@ -1,26 +1,17 @@
-alunos = Pedro
-alunos = Ana
-alunos = Davi
-alunos = Lucas 
-alunos = Maria
+filme1 = "homem_aranha"
+filme2 = "tropa_de_elite"
+filme3 = "clube_da_luta"
+filme4 = "vingadores"
+filme5 = "festa_da_salsicha"
 
-print(alunos)
-alunos.remove("Pedro")
-alunos.pop(2)
-print(alunos[0])
-print(alunos[1])
-print(alunos[2])
-print(alunos[3])
-print(alunos[4])
+print(filme1)
+print(filme2)
+print(filme3)
+print(filme4)
+print(filme5)
 
-alunos.append("erick")
-print(alunos)
+filmes = ["homem aranha", "tropa de elite", "clube da luta", "vingadores", "festa da salsicha"]
 
-quantidade = len(alunos)
-print(f"Temos {quantidade} alunos cadastrados")
-
-for aluno in alunos
-    print(f"Olá {aluno}")
-
-for contador in range(6):
-    print(alunos[contador])
+quantidade = len(filmes)
+print(f"Meus filmes favoritos são {filmes}")
+print(quantidade)
