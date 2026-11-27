@@ -1,13 +1,19 @@
-notas = []
-soma = 0
-for contador in range(5):
-    nota = float(input(f"Digite a {contador + 1}ª nota: "))
-    notas.append(nota)
-    soma += nota
+numeros = []
 
-media = soma / len(notas)
+for contador in range(10):
+    numero = float(input(f"Digite o {contador + 1}ª número: "))
+    numeros.append(numero)
+pares = []
+impares = []
 
-print("Vocês vão criar os prints para esse exercício conforme o resultado")
+for numero in numeros:
+    if numero % 2 == 0:
+        pares.append(numero)
+    else:
+        impares.append(numero)
 
-print("Maior nota: ", max(notas))
-print("Menor nota: ", min(notas))
+print("\nLista original", numeros)
+print("\nNúmeros pares", pares)
+print("\nnumeros impares", impares)
+print("\nQuantidade de pares", len(pares))
+print("\nQuantidade de ímpares", len(impares))
